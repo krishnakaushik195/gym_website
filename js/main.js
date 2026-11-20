@@ -7,7 +7,7 @@
   const isMobile = () => matchMedia('(max-width: 760px)').matches;
   const saveData = !!(navigator.connection && navigator.connection.saveData);
   const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
-  const WA = '918184851169';
+  const WA = '919666732194';
 
   $('#year').textContent = new Date().getFullYear();
   $$('.pulse path').forEach((p) => p.setAttribute('pathLength', '1'));
