@@ -1,4 +1,4 @@
-# Almighty Gym, Tuni
+# Satya Almighty Gym, Tuni
 
 Static, dependency-free website. No build step is needed to run it.
 

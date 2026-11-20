@@ -1,4 +1,4 @@
-/* Almighty Gym: Forged in iron, lit by neon.
+/* Satya Almighty Gym: Forged in iron, lit by neon.
    Palette is sampled from the logo (orange), the wall posters (red) and the gym's own neon (violet, used sparingly). */
 
 @font-face{font-family:"Big Shoulders Display";font-weight:800;font-style:normal;font-display:swap;src:url(../assets/fonts/big-shoulders-display-latin-800-normal.woff2) format("woff2")}
@@ -414,7 +414,7 @@ main{overflow-x:clip}
   :root{--nav:64px}
   body{padding-bottom:calc(68px + env(safe-area-inset-bottom))}
   .nav__cta .btn--fire{display:none}
-  .brand__text{font-size:1.1rem}
+  .brand__text{font-size:clamp(.88rem,4.2vw,1.1rem);letter-spacing:.035em}
   .hero{padding-bottom:110px}
   .hero__chip{display:none}
   .eyebrow__more{display:none}

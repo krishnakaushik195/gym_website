@@ -282,7 +282,7 @@
     name.classList.toggle('err', !name.value.trim());
     if (!name.value.trim()) { name.focus(); return; }
     const phone = form.elements.phone.value.trim();
-    const msg = `Hi Almighty Gym! I'm ${name.value.trim()}. My main goal: ${form.elements.goal.value}. Best time to visit: ${form.elements.time.value}.` +
+    const msg = `Hi Satya Almighty Gym! I'm ${name.value.trim()}. My main goal: ${form.elements.goal.value}. Best time to visit: ${form.elements.time.value}.` +
       (phone ? ` My number: ${phone}.` : '') + ` I'd like to know about membership options.`;
     window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
   });
