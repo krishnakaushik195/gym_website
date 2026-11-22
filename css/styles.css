@@ -353,14 +353,21 @@ main{overflow-x:clip}
 
 /* ---------- footer + dock ---------- */
 .footer{border-top:1px solid var(--line);padding:44px 0 calc(44px + env(safe-area-inset-bottom))}
-.footer__grid{display:grid;grid-template-columns:auto 1fr auto;gap:30px;align-items:center}
+.footer__grid{display:grid;gap:24px}
+.footer__top{display:flex;justify-content:space-between;align-items:center;gap:30px}
 .footer__brand{display:flex;align-items:center;gap:16px}
 .footer__brand img{border-radius:50%}
 .footer__brand b{display:block;font-family:var(--display);font-weight:800;font-size:1.5rem;letter-spacing:.06em;text-transform:uppercase;line-height:1.1}
 .footer__brand span{font-size:.85rem;color:var(--mute)}
 .footer__nav{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:center;font-weight:600;font-size:.92rem;color:var(--mute)}
 .footer__nav a:hover{color:var(--fire)}
+.footer__bottom{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:22px;border-top:1px solid var(--line)}
 .footer__legal{font-size:.85rem;color:var(--mute)}
+.footer__credit{display:inline-flex;align-items:center;gap:8px;color:var(--mute);font-size:.78rem;line-height:1;text-decoration:none;white-space:nowrap}
+.footer__credit svg{flex:none}
+.footer__credit strong{color:var(--txt);font-weight:600}
+.footer__credit:hover strong{color:var(--fire)}
+.footer__credit:focus-visible{outline:2px solid var(--fire);outline-offset:4px;border-radius:2px}
 .dock{display:none}
 
 /* ---------- lightbox ---------- */
@@ -411,7 +418,9 @@ main{overflow-x:clip}
   .panel__vt{writing-mode:horizontal-tb;transform:none;left:68px;bottom:auto;top:50%;margin-top:-1.1rem;font-size:1.6rem}
   .panel__n{top:50%;margin-top:-.8rem}
   .panel.is-active .panel__n{top:22px;margin-top:0}
-  .footer__grid{grid-template-columns:1fr;text-align:center;justify-items:center}
+  .footer__top{flex-direction:column;text-align:center}
+  .footer__bottom{flex-direction:column;text-align:center}
+  .footer__credit{justify-content:center;white-space:normal;line-height:1.35}
 }
 @media (max-width:760px){
   :root{--nav:64px}
